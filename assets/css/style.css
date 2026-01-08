@@ -1,0 +1,136 @@
+body {
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  color: #742305;
+}
+
+button {
+  background-color: #ffdf7f;
+  font-family: "Nunito Sans", sans-serif;
+  color: #742305;
+  font-weight: 800;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #f8d56a;
+  box-shadow: 10px 8px 24px -5px rgba(163, 161, 161, 0.25);
+}
+
+/* nav bar */
+.nav-item {
+  padding: 1em;
+}
+
+header nav {
+  background-color: #fef7e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 0.5em;
+}
+
+header nav img {
+  width: 40px;
+}
+
+.nav-item.large {
+  font-size: 35px;
+  vertical-align: middle;
+  border-radius: 65px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding-inline: 0.5em;
+}
+
+/* cards */
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.card img {
+  max-width: 100%;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+.card {
+  border-radius: 60px;
+  max-width: 350px;
+  width: 100%;
+  background-color: #fef7e2;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+}
+.card-text strong {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+.card button {
+  padding: 0.5em 1em;
+  align-self: center;
+}
+
+/* article */
+
+h3,
+h4 {
+  margin: 0;
+}
+h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 0.25em;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+article {
+  margin: 1em;
+}
+
+.article-container {
+  background-color: #fef7e2;
+  padding: 3em;
+  border-radius: 60px;
+}
+.article-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.honey-img {
+  max-width: 680px;
+  height: 400px;
+  background-image: url("../imgs/honey.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}

@@ -5,37 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complete page</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="nav-item">Our honey</div>
-        <div class="nav-item">Trace Honey</div>
-        <div class="nav-item large">SHOP</div>
-        <div class="nav-item">Facilities</div>
-        <div class="nav-item">Contacts</div>
+        <button class="nav-item">Our honey</button>
+        <button class="nav-item">Trace Honey</button>
+        <button class="nav-item large">
+          <img src="./assets/imgs/logo.png" alt="bee logo" />
+          <span>SHOP</span>
+        </button>
+        <button class="nav-item">Facilities</button>
+        <button class="nav-item">Contacts</button>
       </nav>
     </header>
     <section>
       <h1>Best Selling Products</h1>
-      <div class="card">
-        <img src="./assets/imgs/honey.jpg" alt="honey image" />
-        <div>
-          <strong>100% Bio Honey</strong>
-          <p>Italian, not treated</p>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./assets/imgs/honey.jpg" alt="honey image" />
+          <div class="card-text">
+            <div>
+              <strong>100% Bio Honey</strong> <br />
+              Italian, not treated
+            </div>
+            <span>7$/kg</span>
+          </div>
+          <button>Add to cart</button>
         </div>
-        <span>7$/kg</span>
-        <button>Add to cart</button>
+        <div class="card">
+          <img src="./assets/imgs/honey.jpg" alt="honey image" />
+          <div class="card-text">
+            <div>
+              <strong>100% Bio Honey</strong> <br />
+              Italian, not treated
+            </div>
+            <span>7$/kg</span>
+          </div>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="./assets/imgs/honey.jpg" alt="honey image" />
+          <div class="card-text">
+            <div>
+              <strong>100% Bio Honey</strong> <br />
+              Italian, not treated
+            </div>
+            <span>7$/kg</span>
+          </div>
+          <button>Add to cart</button>
+        </div>
+        <div class="card">
+          <img src="./assets/imgs/honey.jpg" alt="honey image" />
+          <div class="card-text">
+            <div>
+              <strong>100% Bio Honey</strong> <br />
+              Italian, not treated
+            </div>
+            <span>7$/kg</span>
+          </div>
+          <button>Add to cart</button>
+        </div>
       </div>
-      <!--  <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div> -->
     </section>
     <article>
       <h2>Latest News</h2>
-      <div>
-        <div>
+      <div class="article-container">
+        <div class="article-text">
           <h4>Our delicious honey</h4>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cum iure minus quibusdam labore, veritatis pariatur adipisci nostrum nisi nulla
@@ -48,7 +87,7 @@
             laudantium at earum mollitia eaque iure, labore animi officiis reiciendis! Sapiente, soluta.
           </p>
         </div>
-        <img src="./assets/imgs/honey.jpg" alt="honey image" />
+        <div class="honey-img"></div>
       </div>
     </article>
   </body>
