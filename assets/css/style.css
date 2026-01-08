@@ -24,6 +24,8 @@ button:focus {
 /* nav bar */
 .nav-item {
   padding: 1em;
+  flex-grow: 0.5;
+  min-width: 155px;
 }
 
 header nav {
@@ -32,7 +34,8 @@ header nav {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  gap: 0.5em;
+  gap: 1em;
+  flex-wrap: wrap;
 }
 
 header nav img {
@@ -45,8 +48,25 @@ header nav img {
   border-radius: 65px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5em;
   padding-inline: 0.5em;
+  flex-grow: 2;
+  order: 1;
+  width: 100%;
+}
+
+#our {
+  order: 2;
+}
+#trace {
+  order: 3;
+}
+#facilities {
+  order: 4;
+}
+#contacts {
+  order: 5;
 }
 
 /* cards */
@@ -58,7 +78,7 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  margin: 1em;
+  margin-inline: 1em;
 }
 .cards-container {
   display: flex;
@@ -126,11 +146,67 @@ article {
 }
 
 .honey-img {
-  max-width: 680px;
-  height: 400px;
+  flex: 1;
+  height: 200px;
   background-image: url("../imgs/honey.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   object-fit: fill;
+}
+
+.hidden-smaller-screens {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .nav-item {
+    flex-grow: unset;
+    min-width: unset;
+  }
+  .nav-item.large {
+    order: 4;
+    flex-grow: unset;
+    width: unset;
+  }
+  .honey-img {
+    min-width: 300px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header nav {
+    position: fixed;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    padding: 2em;
+  }
+  .nav-item.large {
+    order: 1;
+  }
+
+  .nav-item {
+    width: 200px;
+    border-radius: 60px;
+    height: 100px;
+  }
+  main {
+    margin-left: 225px;
+  }
+
+  .article-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article-text {
+    flex: 1;
+    justify-content: center;
+    order: 1;
+    margin-left: 2em;
+  }
+  .hidden-smaller-screens {
+    display: block;
+  }
 }
